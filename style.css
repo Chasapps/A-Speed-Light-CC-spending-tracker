@@ -1,0 +1,6 @@
+:root { --bg:#fff9fb; --primary:#ff4fb3; --primary-2:#7a5cff; }
+body { font-family:sans-serif; background:var(--bg); margin:0; }
+.app-header { padding:20px; background:linear-gradient(90deg,var(--primary),var(--primary-2)); color:white; }
+.card { margin:20px; padding:20px; background:white; border-radius:8px; }
+table { width:100%; border-collapse:collapse; }
+th,td { border:1px solid #ccc; padding:4px; text-align:left; }
