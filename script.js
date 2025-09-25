@@ -59,7 +59,7 @@ function loadCsvText(csvText) {
     const longDesc = (r[COL.LONGDESC] || '').trim();
     if (!Number.isFinite(raw) || raw === 0) continue;
     if (raw < 0) continue; // drop credits
-    const amount = raw;    // debit stays positive
+    const amount = raw;
     txns.push({ date: effectiveDate, amount, description: longDesc });
   }
   CURRENT_TXNS = txns; saveTxnsToLocalStorage();
@@ -115,4 +115,4 @@ function renderMonthTotals() {
   }
 }
 
-// (other functions unchanged except header in renderTransactionsTable labelled Debit)
+// other UI + pager functions remain unchanged (omitted here for brevity)
